@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimMechanicsImportXML version="1.0" xmlns="urn:mathworks:simmechanics:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="" on="03/14/14||12:08:22" using="SimMechanics Link Version 4.3" from="SolidWorks 20.3.0"/>
+<ModelUnits mass="kilogram" length="meter"/>
+<DataUnits mass="kilogram" length="meter"/>
+<RootAssembly name="Pioneer3DXAssembly" uid="Pioneer3DXAssembly" version="145">
+<AssemblyFile name="Pioneer3DXAssembly.SLDASM" type="SolidWorks Assembly"/>
+<InstanceTree>
+<Instance name="PioneerBody-1" uid="PioneerBody-1" grounded="true" entityUid="PioneerBody*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0.00701689 0.0890023 -0.0813844</Translation>
+</Transform>
+</Instance>
+<Instance name="WheelMain-1" uid="WheelMain-1" entityUid="WheelMain*:*Default">
+<Transform>
+<Rotation>1 -1.93721e-016 -3.15736e-016 3.45648e-016 0.794492 0.607275 1.33208e-016 -0.607275 0.794492</Rotation>
+<Translation>0.00688989 0.0880152 -0.0810503</Translation>
+</Transform>
+</Instance>
+<Instance name="WheelMain-2" uid="WheelMain-2" entityUid="WheelMain*:*Default">
+<Transform>
+<Rotation>-1 -1.11011e-015 4.82769e-016 2.68088e-016 0.185814 0.982585 -1.18048e-015 0.982585 -0.185814</Rotation>
+<Translation>0.0172277 0.087405 -0.0794567</Translation>
+</Transform>
+</Instance>
+<Instance name="CasterWheelClamp-1" uid="CasterWheelClamp-1" entityUid="CasterWheelClamp*:*Default">
+<Transform>
+<Rotation>0.999992 -0.00391138 0 0.00391138 0.999992 0 0 0 1</Rotation>
+<Translation>0.00630808 0.0889812 -0.0813844</Translation>
+</Transform>
+</Instance>
+<Instance name="CasterWheelBody-1" uid="CasterWheelBody-1" entityUid="CasterWheelBody*:*Default">
+<Transform>
+<Rotation>0.999992 -0.00391137 -4.50611e-006 0.00391138 0.999992 0.00115204 0 -0.00115205 0.999999</Rotation>
+<Translation>0.00630785 0.0890408 -0.081626</Translation>
+</Transform>
+</Instance>
+</InstanceTree>
+<Constraints>
+<Coincident name="Coincident9">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>PioneerBody-1</Uid>
+</InstancePath>
+<Position>-0.179083 0.0032385 -0.0016129</Position>
+<Axis>-1 0 -7.34764e-016</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>WheelMain-2</Uid>
+</InstancePath>
+<Position>0.189293 0.00733235 0.0079756</Position>
+<Axis>1 3.69638e-016 -4.44089e-016</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric1">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>PioneerBody-1</Uid>
+</InstancePath>
+<Position>-0.179083 0 0.0016256</Position>
+<Axis>1 0 7.34764e-016</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>WheelMain-2</Uid>
+</InstancePath>
+<Position>0.189293 -7.21645e-016 0.0016256</Position>
+<Axis>-1 -3.69638e-016 4.44089e-016</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident10">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>PioneerBody-1</Uid>
+</InstancePath>
+<Position>0.189166 -0.0032385 -0.0016129</Position>
+<Axis>1 2.22045e-016 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>WheelMain-1</Uid>
+</InstancePath>
+<Position>0.189293 0.00733235 0.0079756</Position>
+<Axis>1 3.69638e-016 -4.44089e-016</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric2">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>PioneerBody-1</Uid>
+</InstancePath>
+<Position>0.189166 2.498e-016 0.0016256</Position>
+<Axis>-1 -2.22045e-016 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>WheelMain-1</Uid>
+</InstancePath>
+<Position>0.189293 -7.35523e-016 0.0016256</Position>
+<Axis>-1 -3.69638e-016 4.44089e-016</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident11">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>CasterWheelClamp-1</Uid>
+</InstancePath>
+<Position>0.0259969 -0.194427 -0.0009906</Position>
+<Axis>-1 -1.22298e-016 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>CasterWheelBody-1</Uid>
+</InstancePath>
+<Position>0.0259969 -0.22004 -0.0416306</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric3">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>CasterWheelClamp-1</Uid>
+</InstancePath>
+<Position>0.0289179 -0.209677 -0.0517906</Position>
+<Axis>-1 -1.22298e-016 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>CasterWheelBody-1</Uid>
+</InstancePath>
+<Position>0.0259969 -0.209677 -0.0517906</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Concentric name="Concentric4">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>PioneerBody-1</Uid>
+</InstancePath>
+<Position>0.0050419 -0.181229 -0.0009906</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>CasterWheelClamp-1</Uid>
+</InstancePath>
+<Position>0.0050419 -0.181229 -0.0039116</Position>
+<Axis>0 -1.22461e-016 1</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident12">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>PioneerBody-1</Uid>
+</InstancePath>
+<Position>0.0323469 -0.209239 -0.0009906</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>CasterWheelClamp-1</Uid>
+</InstancePath>
+<Position>0.0332816 -0.152986 -0.0009906</Position>
+<Axis>0 -1.22461e-016 1</Axis>
+</ConstraintGeometry>
+</Coincident>
+</Constraints>
+</RootAssembly>
+<Assemblies>
+</Assemblies>
+<Parts>
+<Part name="CasterWheelBody" uid="CasterWheelBody*:*Default" version="751">
+<ModelUnits mass="kilogram" length="inch"/>
+<PartFile name="CasterWheelBody.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.165487</Mass>
+<CenterOfMass>0.0050419 -0.209677 -0.0517906</CenterOfMass>
+<Inertia>0.000112833 7.05628e-005 7.05628e-005 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="CasterWheelBody_Default_sldprt.STL" type="STL"/>
+<VisualProperties>
+<Ambient r="1" g="1" b="1" a="0.3"/>
+<Diffuse r="1" g="1" b="1" a="0.3"/>
+<Specular r="0.7" g="0.7" b="0.7" a="0.3"/>
+<Emissive r="0.3" g="0.3" b="0.3" a="0.3"/>
+<Shininess>0.1</Shininess>
+</VisualProperties>
+</Part>
+<Part name="CasterWheelClamp" uid="CasterWheelClamp*:*Default" version="751">
+<ModelUnits mass="kilogram" length="inch"/>
+<PartFile name="CasterWheelClamp.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.0581318</Mass>
+<CenterOfMass>0.00504192 -0.188886 -0.0173088</CenterOfMass>
+<Inertia>3.29275e-005 4.01579e-005 3.9654e-005 9.05748e-006 5.62934e-012 6.99183e-011</Inertia>
+</MassProperties>
+<GeometryFile name="CasterWheelClamp_Default_sldprt.STL" type="STL"/>
+<VisualProperties>
+<Ambient r="0.866667" g="0.909804" b="1" a="1"/>
+<Diffuse r="0.866667" g="0.909804" b="1" a="1"/>
+<Specular r="0.433333" g="0.454902" b="0.5" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.6</Shininess>
+</VisualProperties>
+</Part>
+<Part name="PioneerBody" uid="PioneerBody*:*Default" version="1093">
+<ModelUnits mass="kilogram" length="inch"/>
+<PartFile name="PioneerBody.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>6.15978</Mass>
+<CenterOfMass>0.00478822 -0.0363908 0.0367577</CenterOfMass>
+<Inertia>0.142736 0.0909711 0.170995 -0.00359425 -0.000374565 0.000747729</Inertia>
+</MassProperties>
+<GeometryFile name="PioneerBody_Default_sldprt.STL" type="STL"/>
+<VisualProperties>
+<Ambient r="0.866667" g="0.909804" b="1" a="1"/>
+<Diffuse r="0.866667" g="0.909804" b="1" a="1"/>
+<Specular r="0.433333" g="0.454902" b="0.5" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.6</Shininess>
+</VisualProperties>
+</Part>
+<Part name="WheelMain" uid="WheelMain*:*Default" version="791">
+<ModelUnits mass="kilogram" length="inch"/>
+<PartFile name="WheelMain.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.950541</Mass>
+<CenterOfMass>0.169278 6.00487e-013 0.0016256</CenterOfMass>
+<Inertia>0.00501082 0.00264246 0.00264246 -1.83587e-014 1.6693e-014 6.60067e-015</Inertia>
+</MassProperties>
+<GeometryFile name="WheelMain_Default_sldprt.STL" type="STL"/>
+<VisualProperties>
+<Ambient r="0.792157" g="0.819608" b="0.933333" a="1"/>
+<Diffuse r="0.792157" g="0.819608" b="0.933333" a="1"/>
+<Specular r="0.633725" g="0.655686" b="0.746667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+</Parts>
+</SimMechanicsImportXML>
